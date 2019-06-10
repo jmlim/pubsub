@@ -17,7 +17,7 @@ public class RedisController {
     @GetMapping(value = "/redis-pub")
     public Map<String, String> index() {
 
-        publisher.publish("임정묵 천재 트루");
+        publisher.publish("jmlim message publish test");
         Map<String, String> returnParams = new HashMap<>();
         returnParams.put("success", "success");
         return returnParams;
